@@ -37,24 +37,24 @@
 // ROS
 #include <eigen_conversions/eigen_msg.h>
 #include <pcl_conversions/pcl_conversions.h>
-#include <ros/ros.h>
-#include <visualization_msgs/Marker.h>
-#include <visualization_msgs/MarkerArray.h>
+#include "rclcpp/rclcpp.hpp"
+#include "visualization_msgs/msg/Marker.h"
+#include "visualization_msgs/msg/MarkerArray.h"
 
 // GPD
 #include <gpd/util/cloud.h>
 #include <gpd/grasp_detector.h>
 
 // this project (services)
-#include <gpd_ros/detect_grasps.h>
+#include "gpd_ros/srv/DetectGrasps.hpp"
 
 // this project (messages)
-#include <gpd_ros/GraspConfig.h>
-#include <gpd_ros/GraspConfigList.h>
+#include "gpd_ros/msg/GraspConfig.hpp"
+#include "gpd_ros/msgGraspConfigList.hpp"
 
 // this project (headers)
-#include <gpd_ros/grasp_messages.h>
-#include <gpd_ros/grasp_plotter.h>
+#include "gpd_ros/grasp_messages.h"
+#include "gpd_ros/grasp_plotter.h"
 
 typedef pcl::PointCloud<pcl::PointXYZRGBA> PointCloudRGBA;
 typedef pcl::PointCloud<pcl::PointNormal> PointCloudPointNormal;

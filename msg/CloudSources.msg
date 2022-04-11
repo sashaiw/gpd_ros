@@ -1,5 +1,5 @@
-# This message holds a point cloud that can be a combination of point clouds 
-# from different camera sources (at least one). For each point in the cloud, 
+# This message holds a point cloud that can be a combination of point clouds
+# from different camera sources (at least one). For each point in the cloud,
 # this message also stores the index of the camera that produced the point.
 
 # The point cloud.

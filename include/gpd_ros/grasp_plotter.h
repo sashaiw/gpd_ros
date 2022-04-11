@@ -34,10 +34,10 @@
 #define GRASP_PLOTTER_H_
 
 // ROS
-#include <ros/ros.h>
-#include <sensor_msgs/PointCloud2.h>
-#include <visualization_msgs/Marker.h>
-#include <visualization_msgs/MarkerArray.h>
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/PointCloud2.h"
+#include "visualization_msgs/msg/Marker.h"
+#include <visualization_msgs/msg/MarkerArray.h>
 
 // GPG
 #include <gpd/candidate/hand.h>

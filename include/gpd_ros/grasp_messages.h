@@ -32,12 +32,12 @@
 #ifndef GRASP_MESSAGES_H_
 #define GRASP_MESSAGES_H_
 
-#include <eigen_conversions/eigen_msg.h>
+#include "tf2_eigen/tf2_eigen.hpp"
 
 #include <gpd/candidate/hand.h>
 
-#include <gpd_ros/GraspConfig.h>
-#include <gpd_ros/GraspConfigList.h>
+#include "gpd_ros/msg/GraspConfig.h"
+#include "gpd_ros/msg/GraspConfigList.h"
 
 namespace GraspMessages
 {

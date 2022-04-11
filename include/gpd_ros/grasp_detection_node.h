@@ -38,7 +38,8 @@
 #include <vector>
 
 // ROS
-#include <eigen_conversions/eigen_msg.h>
+//#include <eigen_conversions/eigen_msg.h>
+#include "tf2_eigen/tf2_eigen.hpp"
 #include <pcl_conversions/pcl_conversions.h>
 #include <ros/ros.h>
 #include <sensor_msgs/PointCloud2.h>
@@ -56,16 +57,16 @@
 #include <gpd/sequential_importance_sampling.h>
 
 // this project (messages)
-#include <gpd_ros/CloudIndexed.h>
-#include <gpd_ros/CloudSamples.h>
-#include <gpd_ros/CloudSources.h>
-#include <gpd_ros/GraspConfig.h>
-#include <gpd_ros/GraspConfigList.h>
-#include <gpd_ros/SamplesMsg.h>
+#include "gpd_ros/msg/CloudIndexed.hpp"
+#include "gpd_ros/msg/CloudSamples.hpp"
+#include "gpd_ros/msg/CloudSources.hpp"
+#include "gpd_ros/msg/GraspConfig.hpp"
+#include "gpd_ros/msg/GraspConfigList.hpp"
+#include "gpd_ros/msg/SamplesMsg.hpp"
 
 // this project (headers)
-#include <gpd_ros/grasp_messages.h>
-#include <gpd_ros/grasp_plotter.h>
+#include "gpd_ros/grasp_messages.h"
+#include "gpd_ros/grasp_plotter.h"
 
 typedef pcl::PointCloud<pcl::PointXYZRGBA> PointCloudRGBA;
 typedef pcl::PointCloud<pcl::PointNormal> PointCloudPointNormal;
