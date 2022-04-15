@@ -64,6 +64,8 @@ include_directories(include ${catkin_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS} ${OpenCV_
 
 add_executable(${PROJECT_NAME}_detect_grasps src/gpd_ros/grasp_detection_node.cpp)
 ament_target_dependencies(${PROJECT_NAME}_detect_grasps ${THIS_PACKAGE_INCLUDE_DEPENDS})
+# required to use interface from same package
+rosidl_target_interfaces(${PROJECT_NAME}_detect_grasps ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 ament_export_dependencies(rosidl_default_runtime)
 ament_package()
